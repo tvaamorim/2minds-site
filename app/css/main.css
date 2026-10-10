@@ -1,0 +1,76 @@
+﻿*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 26px;
+
+}
+
+
+/*#region Header */
+.header {
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+    vertical-align: middle;
+    top: 0;
+    width: 100%;
+}
+/*#endregion */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    color: #ebebeb;
+}
+
+.div-tile-small {
+    cursor: pointer;
+    float: left;
+    width: 240px;
+    height: 152px;
+}
+.div-tile-small-large {
+    cursor: pointer;
+    float: left;
+    width: 480px;
+    height: 152px;
+}
+
+
+.piadas {
+    background: red;
+}
+
+.frases {
+    background: black;
+}
+
+.cantadas {
+    background: blue;
+}
+
+.motivacionais {
+    background: green;
+}
+
+.favoritos {
+    background: #808080;
+}
+
+.do-dia {
+    background: yellow;
+}
+
+.div-tile-large {
+    cursor: pointer;
+    width: 480px;
+    padding: 6px;
+    margin: 44px 0 0 0;
+    
+    clear: both;
+    height: 300px;
+}

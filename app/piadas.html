@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/piadas.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div class="header">
+        piadas
+    </div>
+
+
+    <div class="div-card-pai div-card-first">
+        <div class="div-card laranja">
+            <span>O garoto apanhou da vizinha, e a mãe furiosa foi tomar satisfação: Por que a senhora bateu no meu filho? Ele foi mal-educado, e me chamou de gorda. E a senhora acha que vai emagrecer batendo ne?</span>
+        </div>
+        <div class="div-card-options aqua ">
+        </div>
+    </div>
+    <div class="div-card-pai">
+        <div class="div-card azul">
+            <span>O garoto apanhou da vizinha, e a mãe furiosa foi tomar satisfação: Por que a senhora bateu no meu filho? Ele foi mal-educado, e me chamou de gorda. E a senhora acha que vai emagrecer batendo ne?</span>
+        </div>
+        <div class="div-card-options aqua ">
+        </div>
+    </div>
+    <div class="div-card-pai">
+        <div class="div-card verde">
+            <span>O garoto apanhou da vizinha, e a mãe furiosa foi tomar satisfação: Por que a senhora bateu no meu filho? Ele foi mal-educado, e me chamou de gorda. E a senhora acha que vai emagrecer batendo ne?</span>
+        </div>
+        <div class="div-card-options aqua ">
+        </div>
+    </div>
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Enable swiping...
+
+            $(".div-card").swipe({
+
+                swipe: function (event, direction, distance, duration, fingerCount) {
+
+//                    $(this).css("right", 0)
+
+                },
+
+                swipeLeft: function (event, direction, distance, duration, fingerCount) {
+
+                    //  alert("asd")
+                }
+
+                ,
+                swipeStatus: function (event, phase, direction, distance, duration, fingerCount) {
+
+                    $(this).text(distance);
+                    if (direction !== "left" && direction !== "right") {
+                        return;
+                    }
+                    if (direction === "left") {
+                        if (distance < 200) {
+                            $(this).css("right", distance);
+                        }
+                    }
+                    else {
+                        if (distance > 0) {
+                            return;
+                            
+                        }
+                        $(this).css("right", distance);
+                    }
+                },
+                //Default is 75px, set to 0 for demo so any distance triggers swipe
+                threshold: 0
+            });
+        });
+    </script>
+</body>
+
+</html>

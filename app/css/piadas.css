@@ -1,0 +1,69 @@
+﻿.header {
+    color: #ebebeb;
+    text-align: center;
+    background-color: black;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+    vertical-align: middle;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    color: #ebebeb;
+}
+
+.div-card-first {
+    margin: 44px 0 0 0;
+}
+
+.div-card-pai {
+    height: 260px;
+    position: relative;
+    width: 100%;
+}
+
+.div-card-options {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.div-card {
+    color: #ebebeb;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    height: inherit;
+    position:relative;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    width: 100%;
+}
+
+    .div-card > span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.azul {
+    background: #2980b9;
+}
+
+.verde {
+    background: #1b7d5a;
+}
+
+.laranja {
+    background: #ec845c;
+}
+
+.aqua {
+    background: aqua;
+}
