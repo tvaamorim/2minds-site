@@ -16,7 +16,9 @@
   var APP_STORE_ID = '6826859083';
   var PLAY_ID = 'it.twominds.impostormoustache';
   var src = new URLSearchParams(location.search).get('ct') || 'site';
-  var ios = 'https://apps.apple.com/app/id' + APP_STORE_ID;
+  // pt = provider ID (App Store Connect); ct shows up under App Analytics > Campaigns.
+  var ios = 'https://apps.apple.com/app/apple-store/id' + APP_STORE_ID +
+    '?pt=117910209&ct=' + encodeURIComponent(src) + '&mt=8';
   var play = 'https://play.google.com/store/apps/details?id=' + PLAY_ID +
     '&referrer=' + encodeURIComponent('utm_source=' + src + '&utm_medium=share');
   var ua = navigator.userAgent;
